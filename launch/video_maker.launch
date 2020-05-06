@@ -1,0 +1,5 @@
+<launch>
+	<rosparam file="$(find client_interface)/config/configuration.yaml" command="load"/>
+    <rosparam file="$(find video_maker)/config/configuration.yaml" command="load"/>
+    <node name="video_maker_node" pkg="video_maker" type="video_maker_node" output="screen"/>
+</launch>
